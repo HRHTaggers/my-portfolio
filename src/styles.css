@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #018989;
+    --secondary-color: #dbf7fa;
+    --accent-color: #76e8f5;
+}
+
+body {
+    background-color: #01898946;
+    color: #00252e;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    font-size: 12px;
+}
+
+.hero {
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background:-webkit-linear-gradient(rgb(0, 119, 128, 0.8), rgba(0, 128, 85, 0.5));
+    background-image: url(/src/hero-background.jpg);
+    background-size: cover;
+    color: var(--secondary-color);
+}
+
+.hero button {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-button {
+    margin-left: 10px;
+}
+
+.hero p {
+    font-size: 12px;
+}
+
+.hero a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: 200ms all ease-in-out;
+}
+
+.hero a:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.portfolio-scroll {
+    padding: 20px;
+    font-size: 22px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.app-description, .app-image {
+    padding: 30px;
+    text-align: right;
+}
+
+.app-image {
+    align-items: center;
+    background-color: rgba(4, 94, 94, 0.329);
+}
+
+.app-launch-button {
+    padding: 5px 10px;
+    background-color: #00252e;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+.app-launch-button:hover {
+    background-color: black;
+    cursor: pointer;
+}
