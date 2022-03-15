@@ -5,27 +5,35 @@
 }
 
 body {
-    background-color: #01898946;
+    background-color: #044444;
     color: #00252e;
+    font-family: 'Jost', sans-serif;
 }
 
 ul {
     list-style: none;
+    padding-left: 0px;
 }
 
 footer {
-    font-size: 12px;
+    font-size: 18px;
+    color: var(--secondary-color);
 }
 
 .hero {
     text-align: left;
     padding-left: 50px;
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
     background:-webkit-linear-gradient(rgb(0, 119, 128, 0.8), rgba(0, 128, 85, 0.5));
     background-image: url(/src/hero-background.jpg);
     background-size: cover;
     color: var(--secondary-color);
+}
+
+.hero h1 {
+    font-family: 'Megrim', sans-serif;
+    font-size: 60px;
 }
 
 .hero button {
@@ -66,18 +74,19 @@ footer {
 
 .app-description, .app-image {
     padding: 30px;
-    text-align: right;
+    background-color: #011829;
+    color: var(--secondary-color);
+    border-radius: 5px;
 }
 
 .app-image {
     align-items: center;
-    background-color: rgba(4, 94, 94, 0.329);
 }
 
 .app-launch-button {
     padding: 5px 10px;
-    background-color: #00252e;
-    color: white;
+    background-color: var(--secondary-color);
+    color:#011829;
     font-size: 18px;
     border-radius: 5px;
     border: none;
@@ -86,7 +95,41 @@ footer {
     transition: all 200ms ease-in-out;
 }
 
+.app-launch-button a {
+    text-decoration: none;
+    color:#011829;
+}
+
 .app-launch-button:hover {
-    background-color: black;
+    background-color: #a9bfc2;
     cursor: pointer;
+}
+
+.left-column-text {
+    text-align: right;
+}
+
+.left-column-button {
+    display: grid;
+    justify-content: right;
+}
+
+.contact-method a {
+    justify-content: center;
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .app-description {
+        text-align: center;
+    }
+
+    .left-column-text {
+        text-align: center;
+    }
+
+    .left-column-button {
+        justify-content: center;
+    }
 }
