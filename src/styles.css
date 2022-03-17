@@ -2,12 +2,14 @@
     --primary-color: #018989;
     --secondary-color: #dbf7fa;
     --accent-color: #76e8f5;
+    --background-color-main: #044444;
+    --background-color-navigation: #011829; 
 }
 
 body {
-    background-color: #044444;
-    color: #00252e;
-    font-family: 'Jost', sans-serif;
+    background-color: var(--background-color-main);
+    color: var(--secondary-color);
+     font-family: 'Jost', sans-serif;
 }
 
 ul {
@@ -25,6 +27,59 @@ footer {
     color: var(--secondary-color);
 }
 
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: 200ms all ease-in-out;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+nav {
+    padding: 20px;
+    background-color: #011829;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 26px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin-left: 10px;
+    transition: 200ms all ease-in-out;
+}
+
+nav a:hover, nav a.active {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.rotate {
+    transition: 1s;
+}
+
+.rotate:hover {
+    transform: rotateZ(360deg);
+}
+
+.navbar-header {
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
 .reveal {
     position: relative;
     transform: translateY(50px);
@@ -37,35 +92,11 @@ footer {
     opacity: 1;
 }
 
-.navbar-bg {
-    background-color: #011829;
-}
-
-.nav-link-color {
-    color: var(--secondary-color);
-}
-
-.nav-link-color:hover {
-    color: white;
-}
-
-.nav-link-color-selected {
-    color: var(--accent-color);
-}
-
-.nav-link-color-selected:hover {
-    color: white;
-}
-
-.navbar-toggler {
-    border-color: #dbf7
-}
-
 .hero {
     text-align: left;
     padding-left: 50px;
     padding-top: 100px;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
     background:-webkit-linear-gradient(rgb(0, 119, 128, 0.8), rgba(0, 128, 85, 0.5));
     background-image: url(/src/hero-background.jpg);
     background-size: cover;
@@ -114,13 +145,13 @@ footer {
     font-size: 12px;
 }
 
-.hero a {
+a {
     color: var(--secondary-color);
     text-decoration: none;
     transition: 200ms all ease-in-out;
 }
 
-.hero a:hover {
+a:hover {
     color: var(--accent-color);
     cursor: pointer;
 }
@@ -134,9 +165,8 @@ footer {
 
 .app-description, .app-image {
     padding: 30px;
-    background-color: #011829;
+    background-color: var(--background-color-navigation);
     color: var(--secondary-color);
-    border-radius: 5px;
 }
 
 .app-image {
@@ -146,7 +176,7 @@ footer {
 .app-launch-button {
     padding: 5px 10px;
     background-color: var(--secondary-color);
-    color:#011829;
+    color: var(--background-color-navigation);
     font-size: 18px;
     border-radius: 5px;
     border: none;
@@ -157,7 +187,7 @@ footer {
 
 .app-launch-button a {
     text-decoration: none;
-    color:#011829;
+    color: var(--background-color-navigation);
 }
 
 .app-launch-button:hover {
@@ -191,17 +221,55 @@ footer {
 }
 
 .side-panel {
-    background-color: #011829;
+    background-color: var(--background-color-navigation);
     color: var(--secondary-color);
     text-align: center;
 }
 
 #avatar {
+    border: 6px solid #018989;
     border-radius: 360px;
     max-width: 300px;
 }
 
+.portfolio-content {
+    max-width: 400px;
+    height: auto;
+    justify-content: center;
+}
+
+.content-paragraph {
+    text-align: left;
+}
+
+.work-together-link {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    transition: 200ms all ease-in-out;
+}
+
+.work-together-link:hover {
+    background-color: #a9bfc2;
+    cursor: pointer;
+}
+
+.work-together-link a {
+    font-size: 20px;
+    color: var(--background-color-main);
+    transition: 200ms all ease-in-out;
+}
+
+.work-together-link a:hover {
+    color: var(--background-color-navigation);
+}
+
 @media (max-width: 768px) {
+    p {
+        text-align: center;
+        font-size: ;
+    }
+    
     .app-description {
         text-align: center;
     }
@@ -214,7 +282,21 @@ footer {
         justify-content: center;
     }
 
+    .portfolio-scroll {
+        text-align: center;
+    }
+
     .side-panel {
         text-align: center;
+    }
+
+    .content-paragraph {
+        text-align: center;
+    }
+}
+
+@media (max-width: 410px) {
+    .hero {
+        padding-left: 30px;
     }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Helen is a front-end engineer based in the United Kingdom.">
     <title>Helen Ruth Tagliarini - Web Design About Me</title>
 
     <link
@@ -33,28 +34,16 @@
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-bg ps-4">
-        <a class="navbar-brand nav-link-color" href="/">HT</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-link-color-selected" href="/about.html">About Helen<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-link-color" href="/portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-link-color" href="/about.html#contact-me">Contact</a>
-            </li>
-            </ul>
-        </div>
-        </nav>
+      <nav class="d-flex justify-content-between">
+<div class="navbar-header rotate">
+        <a href="/" title="Helen Tagliarini logo">HT</a></div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html" class="active">About</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
         <div class="villain">
         <h1>About me</h1>
         </div>
@@ -62,14 +51,14 @@
         <div class="row">
           <div class="col-md-9 p-0">
         <h3 class="portfolio-scroll" title="professional experience">Background</h3>
-      <p class="pe-4 ps-4">I started out my career in the world of fine chocolate, running operations for some of the most talented chocolatiers in London. Eight delicious years and a couple of stone later, I decided to move into FMCG and started working for MarsWrigley as part of their Sales team, dealing with both external and internal stakeholders.
+      <p class="pt-4 ps-4 pe-4 pb-2">I started out my career in the world of fine chocolate, running operations for some of the most talented chocolatiers in London. Eight delicious years and a couple of stone later, I decided to move into FMCG and started working for MarsWrigley as part of their Sales team, dealing with both external and internal stakeholders.
         </p>
-        <p class="pe-4 ps-4">After taking part in a Hackathon at MW, I was bitten by the coding bug and decided to start learning code, with a view to building business-specific apps.
+        <p class="pe-4 ps-4 pb-4">After taking part in a Hackathon at MW, I was bitten by the coding bug and decided to start learning code, with a view to building business-specific apps.
         </p>
       <h3 class="portfolio-scroll" title="coding experience">Coding</h3>
-      <p class="pe-4 ps-4">As a humanities graduate of the University of St Andrews, my first love has always been language and literature. Coding is the next step in my exploration of the nature of language - human/machine communication.
+      <p class=" pt-4 pe-4 pb-2 ps-4">As a humanities graduate of the University of St Andrews, my first love has always been language and literature. Coding is the next step in my exploration of the nature of language - human/machine communication.
       </p>
-      <p class="pe-4 ps-4">I started coding with SheCodes, completing their Basic, Plus and Responsive courses whilst on maternity leave. This gave me chance to develop skills in the following areas:
+      <p class="pe-4 pb-2 ps-4">I started coding with SheCodes, completing their Basic, Plus and Responsive courses whilst on maternity leave. This gave me chance to develop skills in the following areas:
       </p>
       <ul class="non-hero-list">
           <li class="text-center">
@@ -88,13 +77,11 @@
             <i class="fa-brands fa-bootstrap" title="Bootstrap logo"></i>  
               <div>Bootstrap</div>
           </li>
+        </ul>
+        <ul class="non-hero-list">
           <li class="text-center">
             <i class="fa-brands fa-github" title="Github logo"></i>
               <div>Github</div>
-          </li>
-          <li class="text-center">
-            <i class="fa-solid fa-server" title="online hosting symbol"></i>
-              <div>Hosting</div>
           </li>
           <li class="text-center">
             <i class="fa-solid fa-globe" title="API symbol"></i>  
@@ -109,15 +96,13 @@
               <div>Flexbox</div>
           </li>
       </ul>
-      <p class="pe-4 ps-4">To discover more about my current portfolio, please explore my gitHub repositories in the footer link.
+      <p class="pt-2 pe-4 ps-4">To discover more about my current portfolio, please explore my gitHub repositories in the footer link.
       </p>
-      <p class="pe-4 ps-4">I am currently following the SheCodes React course and continuing my coding adventures with Udemy and Dataquest.
+      <p class="pt-2 pe-4 pb-4 ps-4">I am currently following the SheCodes React course and continuing my coding adventures with Udemy and Dataquest.
       </p>
-      <h3 class="portfolio-scroll" id="contact-me">Contact</h3>
-      <p class="pe-4 ps-4">I'm always interested to learn more and discuss potential projects. If you are interested in collaborating on a website or app, contact me either by clicking on the LinkedIn icon or email icon below.</p>
       </div>
       <div class="col-md-3 side-panel">
-        <img src="/src/business-avatar.png" alt="avatar-Helen-Tagliarini-teal" class="w-100 p-4 text-center" id="avatar"/>
+        <img src="/src/business-avatar.png" alt="avatar-Helen-Tagliarini-teal" class="w-100 mt-4 mb-4 text-center" id="avatar"/>
         <h4>Expertise & Experience</h4>
         <h5>Fields</h5>
           <ul class="text-muted">
@@ -154,7 +139,9 @@
           </div>
         </div>
         <br />
-      <div class="text-center">Coded by H. R. Tagliarini, open-sourced on Github and hosted on Netlify.
+        <div class="text-center">Coded by H. R. Tagliarini, open-sourced on 
+        <a href="https://github.com/HRHTaggers/my-portfolio" title="GitHub my-portfolio link">Github</a> and hosted on 
+        <a href="https://www.netlify.com/" title="Netlify link">Netlify</a>
       </div>
       <br />
     </footer>
