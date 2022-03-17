@@ -110,7 +110,7 @@ nav a:hover, nav a.active {
 
 .hero button {
     padding: 5px 10px;
-    background-color: var(--primary-color);
+    background-color: rgb(155, 2, 129);
     color: var(--secondary-color);
     border-radius: 5px;
     border: none;
@@ -267,7 +267,6 @@ a:hover {
 @media (max-width: 768px) {
     p {
         text-align: center;
-        font-size: ;
     }
     
     .app-description {
