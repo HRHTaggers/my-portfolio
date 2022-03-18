@@ -67,8 +67,6 @@ nav a:hover, nav a.active {
 }
 
 .rotate {
-    max-width: 10px;
-    max-height: 40px;
     transition: 1s;
 }
 
