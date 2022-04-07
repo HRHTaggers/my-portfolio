@@ -265,25 +265,19 @@ a:hover {
 }
 
 .work-together-link {
-    background-color: var(--secondary-color);
+    background-color: rgb(155, 2, 129);
     border: none;
     border-radius: 5px;
     transition: 200ms all ease-in-out;
 }
 
 .work-together-link:hover {
-    background-color: #a9bfc2;
+    background-color: rgb(116, 1, 96);
     cursor: pointer;
 }
 
-.work-together-link a {
-    font-size: 20px;
-    color: var(--background-color-main);
-    transition: 200ms all ease-in-out;
-}
-
-.work-together-link a:hover {
-    color: var(--background-color-navigation);
+.work-together-link:hover a {
+    color: #b7cdd1;
 }
 
 @media (max-width: 768px) {
